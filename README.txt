@@ -10,7 +10,7 @@ You can click the Preview link to take a look at your changes.
 --->
 Nom du jeu: Monsters 4 batlle
 Explications : un puissance 4 1v1 avec des monstres à capacités spéciales
-(ex: faire un Puissance 4 charge l'attaque du monstre pour faire dezs dégts.)
+(ex: faire un Puissance 4 charge l'attaque du monstre pour faire des dégtas.)
 
 Le but: Mettre les PV (points de vie) de son adversaire à zero
 chacun son tour
