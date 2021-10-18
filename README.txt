@@ -8,7 +8,7 @@
 Astrefle/Astrefle is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
-Nom du jeu: Monsters 4 batlle
+Nom du jeu: Brawl 4 Monsters
 Explications : un puissance 4 1v1 avec des monstres à capacités spéciales
 (ex: faire un Puissance 4 charge l'attaque du monstre pour faire des dégtas.)
 
