@@ -9,6 +9,8 @@ from Titre import*
 
 
 
+
+
 pygame.display.set_caption("Brawl 4 Monsters")
 screen=pygame.display.set_mode((1080,720))
 
@@ -32,27 +34,42 @@ while running:
     screen.blit(Titre.title2,Titre.hit2)
     screen.blit(Titre.title3,Titre.hit3)
 
-#Test affichage Perso
+#Test affichage Pion
 
-    screen.blit(game.pion.p1,game.pion.hit_p1)
+    
+    for i in game.l_pion:
+        screen.blit(i.p1,i.hit_p1)
+
+    
+
+    
 
 #Déplacement du perso    
-    if game.pressed.get(pygame.K_RIGHT) and game.pion.hit_p1.x+game.pion.hit_p1.width<1080:
+    if game.pressed.get(pygame.K_RIGHT) and game.pion.hit_p1.x+game.pion.hit_p1.width<880:
         game.pion.Right()
-    elif game.pressed.get(pygame.K_LEFT) and game.pion.hit_p1.x>=0:
+    elif game.pressed.get(pygame.K_LEFT) and game.pion.hit_p1.x>200:
         game.pion.Left()
+    elif game.pressed.get(pygame.K_RETURN) and game.pion.hit_p1.y <500:
+        game.pion.tombe()
+        game.newpion()
+    
+
+        
 
     pygame.display.flip()
-
-
-   
+    
+   #def des touches du jeu 
+    game.pressed[pygame.K_RIGHT] = False
+    game.pressed[pygame.K_LEFT] = False
+    game.pressed[pygame.K_RETURN] = False
+    
     for i in pygame.event.get():
         if i.type == pygame.QUIT:
             running=False
             pygame.quit()
         
-        elif i.type == pygame.KEYDOWN:
+        if i.type == pygame.KEYUP:
             game.pressed[i.key] = True
-        elif i.type == pygame.KEYUP:
-            game.pressed[i.key] = False
+
+    
             
