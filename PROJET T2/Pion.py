@@ -2,21 +2,21 @@ import pygame
 pygame.init()
 from Grille import*
 
+
+
 class PION(pygame.sprite.Sprite):
-    def __init__ (self,grille):
+    def __init__ (self,grille,l_pion):
         super().__init__
-        self.p1 = pygame.image.load('assets/SPRITE_/PION.png')
+        self.p1 = pygame.image.load('assets/SPRITE_/pion/PION.png')
         self.hit_p1= self.p1.get_rect()
         print(self.hit_p1)
         self.hit_p1.x=310+190
-        self.hit_p1.y=100
+        self.hit_p1.y=0
         self.colonne=4
         self.grille=grille
-
+        self.l_pion=l_pion 
         
-
-
-        
+ 
     def Right(self):
         self.hit_p1.x +=100
         self.colonne+=1
@@ -28,6 +28,37 @@ class PION(pygame.sprite.Sprite):
         print (self.colonne)
         return self.colonne
     def tombe(self):
-        self.hit_p1.y+=400
         
-        self.grille.ajout_pion(self.colonne) 
+        
+        if (len(self.l_pion)%2)==0:
+            p=2
+            self.grille.ajout_pion(self.colonne,p)
+            self.hit_p1.y=self.hit_p1.y+700-(100*self.grille.taille(self.colonne))
+                
+        else:
+            p=1
+            self.grille.ajout_pion(self.colonne,p)
+            self.hit_p1.y=self.hit_p1.y+700-(100*self.grille.taille(self.colonne))            
+            
+    
+
+            
+           
+            
+            
+
+
+        
+
+     
+
+        
+
+        
+
+
+
+
+
+
+
