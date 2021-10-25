@@ -28,17 +28,15 @@ Titre= TITLE()
 while running:
 #fond d'ecran 
     screen.blit(bg_,(0,0))
-    
 #Titre du jeu
     screen.blit(Titre.title1,Titre.hit1)
     screen.blit(Titre.title2,Titre.hit2)
     screen.blit(Titre.title3,Titre.hit3)
-
 #Test affichage Pion
-
-    
     for i in game.l_pion:
         screen.blit(i.p1,i.hit_p1)
+        
+
 
     
 
@@ -49,13 +47,10 @@ while running:
         game.pion.Right()
     elif game.pressed.get(pygame.K_LEFT) and game.pion.hit_p1.x>200:
         game.pion.Left()
-    elif game.pressed.get(pygame.K_RETURN) and game.pion.hit_p1.y <500:
+    elif game.pressed.get(pygame.K_RETURN) and game.pion.hit_p1.y <700:
         game.pion.tombe()
         game.newpion()
     
-
-        
-
     pygame.display.flip()
     
    #def des touches du jeu 
@@ -72,4 +67,5 @@ while running:
             game.pressed[i.key] = True
 
     
+            
             
