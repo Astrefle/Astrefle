@@ -1,7 +1,7 @@
 import pygame
 pygame.init()
 
-
+#Utilisation de Pile
 class Colonne():
     def __init__(self):
         self.contenu=[]
