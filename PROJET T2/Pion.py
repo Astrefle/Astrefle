@@ -7,7 +7,7 @@ from Grille import*
 class PION(pygame.sprite.Sprite):
     def __init__ (self,grille,l_pion):
         super().__init__
-        self.p1 = pygame.image.load('assets/SPRITE_/pion/PION.png')
+        self.p1 = pygame.image.load('assets/SPRITE_/pion/PION1.png')
         self.hit_p1= self.p1.get_rect()
         print(self.hit_p1)
         self.hit_p1.x=310+190
