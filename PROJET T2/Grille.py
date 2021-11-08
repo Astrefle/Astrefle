@@ -17,8 +17,6 @@ class Grille:
             self.grille.append(Colonne())
             
     
-    
-    
     def est_vide(self,colonne):
         return self.grille[colonne-1].est_vide()
         
@@ -48,7 +46,5 @@ class Grille:
 
 
 
-
-        
 
         
