@@ -11,13 +11,13 @@ class TITLE(pygame.sprite.Sprite):
         super().__init__
         self.title1 = pygame.image.load('assets/BG_/TITRE1.png')
         self.hit1= self.title1.get_rect()
-        self.hit1.x=330
+        self.hit1.x=20
         self.hit1.y=50
         self.title2 = pygame.image.load('assets/BG_/TITRE2.png')
         self.hit2= self.title1.get_rect()
-        self.hit2.x=630
+        self.hit2.x=500
         self.hit2.y=40
         self.title3 = pygame.image.load('assets/BG_/TITRE3.png')
         self.hit3= self.title1.get_rect()
-        self.hit3.x=330
+        self.hit3.x=20
         self.hit3.y=150
