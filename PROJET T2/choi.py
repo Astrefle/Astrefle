@@ -10,6 +10,8 @@ class Choix_perso:
         self.choix=self.l_perso[f'{self.num}']
         self.perso_choisis= pygame.image.load(f'assets/SPRITE_/persoj1/{self.choix}')
         self.perso_choisis_hit=self.perso_choisis.get_rect()
+        self.perso_choisis_hit.x=230
+        self.perso_choisis_hit.y=520
         self.l_pion_perso={'1':"PION1.png",'2':"PION2.png",'3':"PION3.png",'4':"PION4.png",'5':"PION5.png"}
 
     
@@ -41,7 +43,3 @@ class Choix_perso:
     def end(self):
         self.end=0
         return self.end
-    
-        
-        
-        
