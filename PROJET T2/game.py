@@ -1,36 +1,36 @@
+from choi import*
+from Grille import*
+from Pion import*
 import pygame
 pygame.init()
-from Pion import*
-from Grille import*
 
 
 class Game:
-    def __init__(self):
-        self.grille=Grille()
-    
-        self.l_pion=[]
-        
-        self.pion= PION(self.grille,self.l_pion)
-        
-        self.pressed ={}
+    def __init__(self, choi1, choi2):
+
+        self.choi1 = choi1
+        self.choi2 = choi2
+
+        self.grille = Grille()
+
+        self.l_pion = []
+
+        """self.p1=self.choipion"""
+
+        self.pressed = {}
 
         print(self.pressed)
-        
-        self.l_pion.append(self.pion)
-    
+
+        self.newpion()
+
     def newpion(self):
-       
-        self.pion=PION(self.grille,self.l_pion)
-        
-        self.l_pion.append(self.pion)
-        
-        if (len(self.l_pion)%2)==0:
-            self.pion.p1=pygame.image.load('assets/SPRITE_/pion/PION2.png')  
-        
+
+        if (len(self.l_pion) % 2) == 0:
+            choi = self.choi1
         else:
-            self.pion.p1=pygame.image.load('assets/SPRITE_/pion/PION.png')
-        
+            choi = self.choi2
+        self.pion = PION(self.grille, self.l_pion, choi)
+
+        self.l_pion.append(self.pion)
+
         return self.pion
-    
-    
-           
