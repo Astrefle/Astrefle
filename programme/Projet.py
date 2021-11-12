@@ -24,7 +24,7 @@ Choix = Choix_perso()
 #Test audio
 pion_moove=pygame.mixer.Sound("assets/SOUND_/pion_mooving.ogg")
 pion_fall=pygame.mixer.Sound("assets/SOUND_/pion_fall.ogg")
-son=pygame.mixer.Sound("assets/SOUND_/song.wav")
+son=pygame.mixer.Sound("assets/SOUND_/mus.wav")
 son.set_volume(3.0)
 pion_moove.set_volume(0.3)
 pion_fall.set_volume(0.3)
