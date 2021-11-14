@@ -71,6 +71,7 @@ while r:
 
     elif st_numachi_btn.draw(screen):
         bg = pygame.image.load('assets/BG_/bg/numachi.png')
+        music=pygame.mixer.Sound("assets/SOUND_/numachi_song.wav")
         running = True
         r = False
 
