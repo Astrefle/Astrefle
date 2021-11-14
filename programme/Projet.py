@@ -31,7 +31,8 @@ son.set_volume(0.8)
 pion_moove.set_volume(0.3)
 pion_fall.set_volume(0.3)
 
-son.play(1)
+while run:
+    son.play()
 
 # Barre de vie
 pv1 = pygame.image.load('assets/SPRITE_/barre_vie/pv1.png')
