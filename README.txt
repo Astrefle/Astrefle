@@ -9,8 +9,9 @@ Astrefle/Astrefle is a ✨ special ✨ repository because its `README.md` (this 
 You can click the Preview link to take a look at your changes.
 --->
 Nom du jeu: Brawl 4 Monsters
-Explications : un puissance 4 1v1 avec des monstres à capacités spéciales
+Explications : Le bur est de faire une suite de 4 pions (horizontale ou verticale)
+1v1 avec des monstres incarnant les joueurs 
 (ex: faire un Puissance 4 charge l'attaque du monstre pour faire des dégtas.)
 
 Le but: Mettre les PV (points de vie) de son adversaire à zero
-chacun son tour
+
