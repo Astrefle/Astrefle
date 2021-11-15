@@ -24,7 +24,7 @@ entre_button = Button(210, 450, left_img, 0.8)
 
 jeu_start = 0
 suivant = 1
-bg_ = pygame.image.load('assets/BG_/bg/numachi.png')
+bg_ = pygame.image.load('assets/BG_/bg/thumb2-4k-sea-moon-digital-art-8-bit.png')
 Titre = TITLE()
 Choix1 = Choix_perso()
 Choix2 = Choix_perso2()
