@@ -30,7 +30,7 @@ ok_img_hit.x = 160.5
 ok_img_hit.y = 700
 
 
-bg_ = pygame.image.load('assets/BG_/bg/numachi.png')
+bg_ = pygame.image.load('assets/BG_/bg/thumb2-4k-sea-moon-digital-art-8-bit.png')
 
 Titre = TITLE()
 
