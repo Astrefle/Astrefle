@@ -73,7 +73,13 @@ while running:
             if game.grille.est_rempli():
                 game.new_grille()
             game.newpion()
-    """elif game.pressed[pygame.K_a]"""
+    elif game.pressed.get(pygame.K_a):
+        pv.degat1()
+        pv1 = pygame.image.load(f'assets/SPRITE_/barre_vie/{pv.pv}')
+    elif game.pressed.get(pygame.K_e):
+        pv.degat2()
+        pv2 = pygame.image.load(f'assets/SPRITE_/barre_vie/{pv.pv}')
+
     
 
     pygame.display.flip()
