@@ -36,7 +36,7 @@ st_volcano_img_hit = st_volcano_img.get_rect()
 st_volcano_img_hit.y = 300
 st_volcano_img_hit.x = 350
 
-bg_ = pygame.image.load('assets/BG_/bg/numachi.png')
+bg_ = pygame.image.load('assets/BG_/bg/thumb2-4k-sea-moon-digital-art-8-bit.png')
 
 Titre = TITLE()
 
