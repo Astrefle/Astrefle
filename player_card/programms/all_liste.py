@@ -97,9 +97,3 @@ def liste_classe_objet():
     return {'Pyroguerrier': 'Huile de feu', 'Amphibien': 'Potion de vie', 'Archer': 'Fleche explosife', 'Barbare': 'Alcool fort', 'Electroguerrier': 'Chaine de fer',
             'Coeurdeglace': 'Plaque de glace', 'Assassin': 'Piege empoisonne', 'Chevalier': 'Selle de chevale', 'Paladin': "Psaume d'Iros", 'Necromancien': 'Os de loup'}
 
-"""l=162
-    for i in range(0,8):
-        inventaire = Label(fiche, text=f'-{self.inventaire[i]}', font=(
-            "Gentium basic", 14, 'bold'), fg="white", bg='black')
-        inventaire.place(x='10',y=l)
-        l+=37"""
